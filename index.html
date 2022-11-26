@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="im/logo.png">
+    <title>Tamarind Villa</title>
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">TAMARIND VILLA</h1>
+        <ul class="nav-links">
+            <li class="ctn"><a href="#services">Facilities</a></li>
+            <li class="ctn"><a href="#explores">Explore</a></li>
+            <li class="ctn"><a href="#book">Book Now</a></li>
+            <li class="ctn"><a  href="#gallery">Gallery</a></li>
+        </ul>
+       <div class="mobile-nav">
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+        <h1 class="close-btn">X</h1>
+       </div>
+    </nav>
+
+    <header>
+        <div class="header-content" id="home">
+            <h2>Discover the Nature's Home Ground</h2>
+            <div class="line"></div>
+            <div>
+                <h1 class="ctni">TAMARIND VILLA</h1>
+            </div>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- == Events == -->
+    <section class="events" id="services">
+        <div class="title">
+            <h1>Facilities and Services</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./im/img1.jpg" alt="">
+                <h4>Enchanting Atmosphere</h4>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./im/img2.jpg" alt="">
+                <h4>Aesthetic Interiors</h4>
+                
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+          
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./im/bed.png" alt="">
+                <h4>Two Bedrooms</h4>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./im/imgp.jpg" alt="">
+                <h4>Placid Evergreen Pond</h4>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+          
+        </div>
+    </section>
+    <section class="explore" id="explores">
+      <div class="explore-content">
+        <h1 class="ctni">EXPLORE OUR TAMARIND VILLA</h1>
+        <div class="line"></div>
+        
+        <div class="col">
+            <hr>
+            <div>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IpL4EbJpJcE?rel=0&amp;showinfo=0"></iframe>
+            </div>
+            </div>
+    </section>
+    <section class="events" id="book">
+        <div class="title">
+            <h1>Book Now</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./im/bg2.png" alt="">
+            </div>
+          
+        </div>
+    </section>
+
+    <section class="tours" id="gallery">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Gallery</h1>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./im/img3.png" alt="">
+                    <img src="./im/img16.png" alt="">
+                    <img src="./im/img4.png" alt="">
+                    <img src="./im/img13.png" alt="">
+                    <img src="./im/img14.png" alt="">
+                    <img src="./im/img8.png" alt="">
+                    <img src="./im/img5.png" alt="">
+                    <img src="./im/img6.png" alt="">
+                    <img src="./im/img7.png" alt="">
+                    <img src="./im/img9.png" alt="">
+                    <img src="./im/img10.png" alt="">
+                    <img src="./im/img12.png" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>Powered by AgrowIT Web Services, Kattappana | Phone: 7736701028(Melvin) | Email: agrowitpvt@gmail.com</p>
+        <p>Copyright © AgrowIT</p>
+    </section>
+
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const closeBtn = document.querySelector('.close-btn')
+
+        mobileNav.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+</body>
+</html>
